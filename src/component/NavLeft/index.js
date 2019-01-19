@@ -34,13 +34,10 @@ export default class NavLeft extends React.Component{
                     </SubMenu>)
             }else{
                 return (
-                    <SubMenu key={item.key} 
-                            title={
-                                <span>
-                                <Icon type="mail" />
-                                <span>{item.title}</span>
-                                </span>
-                            }></SubMenu>)
+                    <Menu.Item key={item.key}>
+                        <Icon type="mail" />
+                        <span>{item.title}</span>
+                    </Menu.Item>)
                 
                            
             }
